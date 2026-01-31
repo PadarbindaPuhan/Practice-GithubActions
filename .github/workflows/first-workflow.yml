@@ -5,7 +5,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: print greetings
-        run: echo "Hello from my first workflow"
+        run: |
+              echo "Hello from my first workflow"
+              echo "looks like github action is fun"
       - name: print goodbye
         run: echo "bye from my first workflow"
   
