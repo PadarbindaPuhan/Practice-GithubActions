@@ -1,0 +1,19 @@
+name: steps output
+on: workflow_dispatch
+jobs: 
+  job1: 
+    runs-on: ubantu-latest
+    steps: 
+      - name: first step
+        id: set-output
+        shell: bash
+        run: |
+          echo "name = Puhan"
+          echo "age = 23"
+      - name: print output 
+        run: |
+          echo "My name is ${{steps.set-output.outputs.name}}
+          echo "My age is ${{steps.set-output.outputs.age}}
+      
+          
+      
