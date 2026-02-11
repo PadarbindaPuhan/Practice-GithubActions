@@ -1,5 +1,9 @@
 name: steps output
-on: workflow_dispatch
+on: 
+  push: 
+    branches: 
+      - main
+  
 jobs: 
   job1: 
     runs-on: ubantu-latest
