@@ -3,7 +3,7 @@ on: workflow_dispatch
 
 jobs: 
   job1: 
-    runs-on: ubantu-latest
+    runs-on: ubuntu-latest
     steps: 
       - name: first step
         id: set-output
