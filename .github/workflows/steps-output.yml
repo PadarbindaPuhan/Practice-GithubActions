@@ -13,8 +13,8 @@ jobs:
           echo "age = 23" >> $GITHUB_OUTPUT
       - name: print output 
         run: |
-          echo "My name is ${{steps.set-output.outputs.name}}
-          echo "My age is ${{steps.set-output.outputs.age}}
+          echo "My name is ${{steps.set-output.outputs.name}}"
+          echo "My age is ${{steps.set-output.outputs.age}}"
       
           
       
